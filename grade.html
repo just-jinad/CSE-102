@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grading system</title>
+</head>
+<body>
+    <button onclick="enter()">Check Grade</button>
+    <input type="text" placeholder="Enter Score" id="userGrade">
+    <div id="disp"></div>
+
+    <script>
+        const enter = ()=>{
+        let studentScore = userGrade.value
+        
+        if(studentScore >96 && studentScore<=100){
+            document.getElementById("disp").innerHTML = "A+"
+
+        }else if(studentScore >92 && studentScore <=96){
+            document.getElementById("disp").innerHTML = "A"
+
+        }else if(studentScore >89 && studentScore <=92){
+            document.getElementById("disp").innerHTML = "A-"
+
+        }else if(studentScore > 86 && studentScore <= 89){
+            document.getElementById("disp").innerHTML = "B+"
+
+        }else if(studentScore >82 && studentScore <=86 ){
+            document.getElementById("disp").innerHTML = "B"
+
+        }else if(studentScore >79 && studentScore <=82 ){
+            document.getElementById("disp").innerHTML = "B-"
+
+        }else if(studentScore >76 && studentScore <=79 ){
+            document.getElementById("disp").innerHTML = "c+"
+
+        }else if(studentScore >72 && studentScore <=76 ){
+            document.getElementById("disp").innerHTML = "C"
+
+        }else if(studentScore >69 && studentScore <=72 ){
+            document.getElementById("disp").innerHTML = "C-"
+
+        }else if(studentScore >66 && studentScore <=69 ){
+            document.getElementById("disp").innerHTML = "D+"
+
+        }else if(studentScore >62 && studentScore <=66 ){
+            document.getElementById("disp").innerHTML = "D"
+
+        }else if(studentScore >59 && studentScore <=62 ){
+            document.getElementById("disp").innerHTML = "D-"
+
+        }else if(studentScore >-1 && studentScore <=59 ){
+            document.getElementById("disp").innerHTML = "F"
+
+        }
+        }
+    </script>
+</body>
+</html>

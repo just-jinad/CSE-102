@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDC NID</title>
+</head>
+
+<body>
+
+    <button onclick="check()">Check</button>
+    <input type="text" placeholder="Enter Number" id="userInput">
+    <div id="display"></div>
+    <div id="disp"></div>
+    <script>
+        for (let i = 1; i <= 100; i++) {
+            console.log(i)
+            document.getElementById("disp").innerHTML += `<h2> ${i}</h2>`
+        }
+
+
+        const check = () => {
+            let userNumber = userInput.value
+                if (userNumber % 3 == 0 && userNumber % 5 == 0) {
+                    document.getElementById("display").innerHTML = "PDC NID"
+
+                } else if (userNumber % 5 == 0) {
+                    document.getElementById("display").innerHTML = "NID"
+
+                }else if(userNumber %3 ==0){
+                    document.getElementById("display").innerHTML = "PDC"
+                }else{
+                    document.getElementById("display").innerHTML = "Neither PDC or NID"
+
+                }
+            
+        }
+    </script>
+</body>
+
+</html>
